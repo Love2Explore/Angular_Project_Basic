@@ -1,0 +1,19 @@
+<h1>Login</h1>
+<style>
+.block {
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+</style>
+<div class="container">
+  <small class="alert alert-warning" *ngIf="errorMessageVisibility">{{errorMessage}}</small>
+  <div class="block">
+      User Name:<input type="text" name="username" [(ngModel)] ="username">
+      Password:<input type="password" name="password" [(ngModel)] ="password">
+      <button class="btn btn-success" (click)=handleLoginButon()>Login</button>
+  </div>
+</div>
+

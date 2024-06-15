@@ -1,0 +1,13 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div><a href="/" class="navbar-brand">in28</a></div>
+        <ul class="nav">
+            <li *ngIf="authUser.isUserLogginIn()" class="nav-item"><a class="nav-link" href="/welcome/rewati" routerLinkActive = "is-enabled" >Home</a></li>
+            <li *ngIf="authUser.isUserLogginIn()" class="nav-item"><a href="/todo" class="nav-link">Todos</a></li>
+        </ul>
+        <ul class="nav navbar-collapse justify-content-end">
+            <li *ngIf="!authUser.isUserLogginIn()" class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+            <li *ngIf="authUser.isUserLogginIn()" class="nav-item"><a href="/logout" class="nav-link" (click)="logout">Logout</a></li>
+        </ul>
+    </nav>
+</header>

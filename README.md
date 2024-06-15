@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## CMD
+npm install -g @angular/cli
+ng new my-first-project
+cd my-first-project
+ng serve
+
+ng dist
+ng serve
+ng test
+ng lint
+ng e2e
+
+ng generate component Welcome
+ng generate service hardcodedAuthentication
+ng generate service service/data/todoData  

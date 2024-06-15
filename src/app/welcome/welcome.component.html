@@ -1,0 +1,20 @@
+<h1>Welcome</h1>
+<div class="container">
+    <p>welcome works! {{name}}</p>
+    <p>You can manage your Todo Herr</p><a href="/todo">Todos</a>
+    <br>
+    <button (click)="onWelcome()" class="btn btn-success">Click</button> 
+    <br>
+    <input value="" type="text">
+    <button (click)="onWelcomePathVariable()" class="btn btn-success">Click With Username</button> 
+    <br>
+    <div *ngIf="errorMessageVisibility">
+        <h1>Message from Server</h1>
+        <p>{{welcomeMessage}}</p>
+    </div>
+    <div *ngIf="errorMessageVisibilityPathV">
+        <h1>Message from Server</h1>
+        <p>{{username}}</p>
+    </div>
+</div>
+
